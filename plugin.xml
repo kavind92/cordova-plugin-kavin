@@ -1,5 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
+<<<<<<< HEAD
 <plugin id="cordova-plugin-kavin" version="1.0.0" 
+=======
+<plugin id="cordova-plugin-kavin" version="1.0.1" 
+>>>>>>> 033deeab7aa300987b2d84116a8f53a2efaecd0d
 xmlns="http://apache.org/cordova/ns/plugins/1.0" 
 xmlns:android="http://schemas.android.com/apk/res/android">
 
