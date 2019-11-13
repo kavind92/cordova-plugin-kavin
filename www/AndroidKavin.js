@@ -1,10 +1,10 @@
 var exec = cordova.require('cordova/exec');
 
-var AndroidToast = function() {
-    console.log('AndroidToast instanced');
+var AndroidKavin = function() {
+    console.log('AndroidKavin Started');
 };
 
-AndroidToast.prototype.show = function(msg, onSuccess, onError) {
+AndroidKavin.show = function(msg, onSuccess, onError) {
     var errorCallback = function(obj) {
         onError(obj);
     };
@@ -13,9 +13,9 @@ AndroidToast.prototype.show = function(msg, onSuccess, onError) {
         onSuccess(obj);
     };
 
-    exec(successCallback, errorCallback, 'AndroidToast', 'show', [msg]);
+    exec(successCallback, errorCallback, 'AndroidKavin', 'show', [msg]);
 };
 
 if (typeof module != 'undefined' && module.exports) {
-    module.exports = AndroidToast;
+    module.exports = AndroidKavin;
 }

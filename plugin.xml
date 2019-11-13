@@ -1,26 +1,30 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-kavin" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>AndroidToast</name>
+<plugin id="cordova-plugin-kavin" version="1.0.0" 
+xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <description>Android Toast Plugin</description>
+    <name>Android Kavin Plugin</name>
+
+    <description>Android Kavin Plugin</description>
     <license>Apache 2.0</license>
-    <keywords>android, toast, kavin</keywords>
+    <keywords>android, kavin</keywords>
 
     <engines>
       <engine name="cordova" version=">=3.0.0" />
     </engines>
 
-    <js-module name="AndroidToast" src="www/AndroidToast.js">
-        <clobbers target="AndroidToast" />
+    <js-module name="AndroidKavin" src="www/AndroidKavin.js">
+        <clobbers target="AndroidKavin" />
     </js-module>
 
     <platform name="android">
+    
         <config-file target="config.xml" parent="/*">
-            <feature name="AndroidToast">
-                <param name="android-package" value="com.nikolabreznjak.AndroidToast" />
+            <feature name="AndroidKavin">
+                <param name="android-package" value="com.letsdosimple.AndroidKavin" />
             </feature>
         </config-file>
 
-        <source-file src="src/android/AndroidToast.java" target-dir="src/com/nikola-breznjak/android-toast" />
+        <source-file src="src/android/AndroidKavin.java" target-dir="src/com/letsdosimple/android-kavin" />
     </platform>
 </plugin>
